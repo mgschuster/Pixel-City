@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,13 +28,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taY-e5-qIM">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qg-Uw-Thh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double-tap to drop a pin and view photos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dn-NC-U2S">
-                                        <rect key="frame" x="42" y="24.5" width="291" height="21"/>
+                                        <rect key="frame" x="42" y="34.5" width="291" height="21"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -43,11 +44,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="1o5-eU-yCr"/>
                                     <constraint firstItem="3dn-NC-U2S" firstAttribute="centerX" secondItem="6qg-Uw-Thh" secondAttribute="centerX" id="2xh-o4-phj"/>
-                                    <constraint firstItem="3dn-NC-U2S" firstAttribute="centerY" secondItem="6qg-Uw-Thh" secondAttribute="centerY" id="aPJ-aQ-e0k"/>
+                                    <constraint firstItem="3dn-NC-U2S" firstAttribute="centerY" secondItem="6qg-Uw-Thh" secondAttribute="centerY" constant="10" id="aPJ-aQ-e0k"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baV-S1-h7d">
-                                <rect key="frame" x="309" y="597" width="50" height="50"/>
+                                <rect key="frame" x="309" y="596" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Klb-h3-mcD"/>
                                     <constraint firstAttribute="height" constant="50" id="pZ3-zh-g5v"/>
@@ -58,29 +59,33 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fF4-SZ-FvK">
-                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                                <rect key="frame" x="0.0" y="666" width="375" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="KgH-jo-Z6R"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7fY-dE-uuW" firstAttribute="top" secondItem="baV-S1-h7d" secondAttribute="bottom" constant="20" id="2F9-Kz-qhQ"/>
                             <constraint firstItem="6qg-Uw-Thh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6RN-cL-E1b"/>
                             <constraint firstAttribute="trailing" secondItem="fF4-SZ-FvK" secondAttribute="trailing" id="AC3-x9-i3a"/>
                             <constraint firstItem="taY-e5-qIM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="C0a-hL-bSu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="baV-S1-h7d" secondAttribute="trailing" id="D1h-2o-MF9"/>
                             <constraint firstItem="fF4-SZ-FvK" firstAttribute="top" secondItem="taY-e5-qIM" secondAttribute="bottom" id="D8i-vR-LZp"/>
                             <constraint firstAttribute="trailing" secondItem="taY-e5-qIM" secondAttribute="trailing" id="UIr-Oa-I9q"/>
-                            <constraint firstItem="fF4-SZ-FvK" firstAttribute="bottom" secondItem="7fY-dE-uuW" secondAttribute="top" id="a97-gd-TdM"/>
+                            <constraint firstItem="fF4-SZ-FvK" firstAttribute="top" secondItem="baV-S1-h7d" secondAttribute="bottom" constant="20" id="anp-OT-uDs"/>
+                            <constraint firstAttribute="bottom" secondItem="fF4-SZ-FvK" secondAttribute="bottom" id="cJu-eg-zsy"/>
                             <constraint firstAttribute="trailing" secondItem="6qg-Uw-Thh" secondAttribute="trailing" id="dpc-rc-63h"/>
                             <constraint firstItem="6qg-Uw-Thh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jDQ-NH-IHY"/>
                             <constraint firstItem="taY-e5-qIM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uFQ-KP-C0U"/>
-                            <constraint firstItem="fF4-SZ-FvK" firstAttribute="top" secondItem="7fY-dE-uuW" secondAttribute="bottom" id="wWR-Qb-bCh"/>
                             <constraint firstItem="fF4-SZ-FvK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="z2G-DZ-DdT"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="taY-e5-qIM" id="A4a-S5-ePd"/>
+                        <outlet property="pullUpView" destination="fF4-SZ-FvK" id="Z5C-JE-6QO"/>
+                        <outlet property="pullUpViewHeightConstraint" destination="KgH-jo-Z6R" id="dHO-hT-vh2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
