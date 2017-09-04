@@ -13,6 +13,7 @@
 		845E22621F5DCAB000D24331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845E22601F5DCAB000D24331 /* Main.storyboard */; };
 		845E22641F5DCAB000D24331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845E22631F5DCAB000D24331 /* Assets.xcassets */; };
 		845E22671F5DCAB000D24331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845E22651F5DCAB000D24331 /* LaunchScreen.storyboard */; };
+		845E22741F5DDE5A00D24331 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E22731F5DDE5A00D24331 /* DroppablePin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		845E22631F5DCAB000D24331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845E22661F5DCAB000D24331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845E22681F5DCAB000D24331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845E22731F5DDE5A00D24331 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		845E226F1F5DCB2300D24331 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				845E22731F5DDE5A00D24331 /* DroppablePin.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				845E225F1F5DCAB000D24331 /* MapVC.swift in Sources */,
+				845E22741F5DDE5A00D24331 /* DroppablePin.swift in Sources */,
 				845E225D1F5DCAB000D24331 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +405,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JE8VMAJF52;
 				INFOPLIST_FILE = "Pixel-City/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tjschoost.Pixel-City";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -417,6 +422,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JE8VMAJF52;
 				INFOPLIST_FILE = "Pixel-City/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tjschoost.Pixel-City";
 				PRODUCT_NAME = "$(TARGET_NAME)";
