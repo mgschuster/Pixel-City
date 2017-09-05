@@ -92,6 +92,38 @@
             </objects>
             <point key="canvasLocation" x="-215.19999999999999" y="98.50074962518741"/>
         </scene>
+        <!--PopVC-->
+        <scene sceneID="Df2-hK-LEu">
+            <objects>
+                <viewController storyboardIdentifier="PopVC" id="0hd-QR-7zv" customClass="PopVC" customModule="Pixel_City" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bGa-8i-qf0"/>
+                        <viewControllerLayoutGuide type="bottom" id="4G1-fG-PPH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sGc-e5-TuG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YaW-6N-Iol">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YaW-6N-Iol" firstAttribute="top" secondItem="sGc-e5-TuG" secondAttribute="top" id="96C-FP-fsG"/>
+                            <constraint firstItem="YaW-6N-Iol" firstAttribute="leading" secondItem="sGc-e5-TuG" secondAttribute="leading" id="CUS-ir-amq"/>
+                            <constraint firstItem="4G1-fG-PPH" firstAttribute="top" secondItem="YaW-6N-Iol" secondAttribute="bottom" id="HWD-Nv-ocP"/>
+                            <constraint firstAttribute="trailing" secondItem="YaW-6N-Iol" secondAttribute="trailing" id="jTN-t6-oIC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="popImageView" destination="YaW-6N-Iol" id="CQI-uN-hOe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uQf-xc-ADx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="615.20000000000005" y="98.50074962518741"/>
+        </scene>
     </scenes>
     <resources>
         <image name="locationButton" width="67" height="67"/>
