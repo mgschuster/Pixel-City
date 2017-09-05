@@ -16,6 +16,7 @@
 		845E22741F5DDE5A00D24331 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E22731F5DDE5A00D24331 /* DroppablePin.swift */; };
 		845E22761F5E033F00D24331 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E22751F5E033F00D24331 /* PhotoCell.swift */; };
 		845E22781F5E067800D24331 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E22771F5E067800D24331 /* Constants.swift */; };
+		845E227A1F5EE4AB00D24331 /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845E22791F5EE4AB00D24331 /* PopVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		845E22731F5DDE5A00D24331 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 		845E22751F5E033F00D24331 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		845E22771F5E067800D24331 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		845E22791F5EE4AB00D24331 /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				845E225E1F5DCAB000D24331 /* MapVC.swift */,
+				845E22791F5EE4AB00D24331 /* PopVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845E227A1F5EE4AB00D24331 /* PopVC.swift in Sources */,
 				845E22781F5E067800D24331 /* Constants.swift in Sources */,
 				845E22761F5E033F00D24331 /* PhotoCell.swift in Sources */,
 				845E225F1F5DCAB000D24331 /* MapVC.swift in Sources */,
